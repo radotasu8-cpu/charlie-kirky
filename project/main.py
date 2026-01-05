@@ -28,7 +28,7 @@ async def handler(websocket):
         print("Client disconnected:", websocket.remote_address)
 
 async def main():
-    async with websockets.serve(handler, "localhost", 5000):
+    async with websockets.serve(handler, "localhost", 6769):
         await asyncio.Future()
 
 asyncio.run(main())
